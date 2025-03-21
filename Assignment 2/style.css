@@ -1,0 +1,188 @@
+body {
+  background: #181818;
+}
+.navbar img {
+  position: relative;
+  left: 350px;
+}
+#navbarNav {
+  color: white;
+}
+.nav-link::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  display: block;
+  position: relative;
+  bottom: -30px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+.hero {
+  position: relative;
+
+  width: 120%;
+  height: 100vh;
+  overflow: hidden;
+}
+.back-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.lambo-line {
+  font-family: sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  font-style: oblique;
+  top: 400px;
+  height: 40px;
+  opacity: 0;
+  position: relative;
+  animation: mymove 10s;
+  animation-delay: 1s; /* Initial delay if needed */
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  90% {
+    transform: translateX(100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+}
+
+.card-contanier {
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.card {
+  height: 70vh;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.card-box {
+  padding: 7%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+.container {
+  padding: 2rem;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 70vw;
+  margin: 0 auto;
+  box-shadow: 10px 10px dark;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 10px;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: relative;
+  bottom: 1.2rem;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-50%);
+  /* z-index: 1; */
+}
+.slider::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
+}
+
+.slider-nav a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 1;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.dealer {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.dealer-section {
+  display: flex;
+  justify-content: right;
+  color: white;
+  font-size: large;
+  font-family: sans-serif;
+  font-weight: 600;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(41, 33, 33, 0.958420868347339) 29%,
+    rgba(125, 122, 118, 1) 67%
+  );
+}
+.dealer-img {
+  height: 54vh;
+  
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.news-heading {
+  font-size: 90px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
