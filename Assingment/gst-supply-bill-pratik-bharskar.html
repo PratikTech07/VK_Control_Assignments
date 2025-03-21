@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First HTML Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="navbar navbar-light p-3 d-flex justify-content-center mr-auto">
+      <div class="container p-0">
+        <div class="col-m-4">
+          <img src="https://sleekbill.in/images/logo-sleekbill.png" alt="" />
+        </div>
+        <div class="col-md-8 d-flex justify-content-end">
+          <ul class="nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GST INFO </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item nav-separator ml-sm-2 mr-sm-2">|</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><button
+                  class="btn btn-outline-light mr-sm-2"
+                  style="
+                    border-radius: 20px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border-width: 2px;
+                  "
+                  type="button"
+                >
+                  LOGIN
+                </button></a
+              >
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn signup"
+                style="
+                  background-color: #ffa518;
+                  border-radius: 20px;
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                "
+                type="button"
+              >
+                SIGN UP
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header  ">
+      <div class="container">
+        <div class="d-flex  flex-row">
+          <div class="col-md-8 header-content">
+            <h1 class="header-text ">GST Bill of Supply</h1>
+            <p >
+              If you are under the composition scheme or a supplier of exempted
+              goods/services, read along to find out how to do your invoices.
+            </p>
+          </br>
+            <button class="btn" type="button">
+              START BILING WITH GST
+            </button>
+            <p style="font-size: 12px;padding: 2%; margin-left: 5%;">*Free & Easy - no hidden fees.</p>
+          </div>
+          <div class="col-m-4 justify-content-start">
+            <div class="div-img">
+              <img
+              class="header-img"
+              src="https://sleekbill.in/images/gst-changes/bill-supply-header.png"
+              alt=""
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container body-content d-flex flex-row ">
+      <div class="col-md-8 content-txt"> 
+        <p>In a previous article we discussed the GST Invoice format and the information required in a GST invoice. Having went through the process of GST invoicing, in this article we'll explain one other transaction document called bill of supply. We'll be looking at how to make one, when to issue it and its particularities.</p>  
+        <h3>What is a bill of supply?</h3>
+        <p>A bill of supply is a transaction document that doesn't show any tax amount on it, for which input tax cannot be charged. This is the main difference between this and the tax (GST) invoice.</p>
+        <h3>When do I issue a bill of supply?</h3>
+        <p>You need to issue a bill of supply in any of these cases:</p>
+        <ul>
+          <li>If you are a registered supplier of exempted goods or services</li>
+          <li>You have opted to pay GST under the composition scheme</li>
+        </ul>
+        <p>Cases when a Bill of Supply will not be issued</p>
+        <ul>
+          <li>If the value of the supply is less than Rs. 200 (unless the receiver wants the bill of supply)</li>
+          <li>The recipient is not a registered person AND the recipient does not require a bill of supply</li>
+        </ul>
+        <p>However, a consolidated bill of supply for such supplies should be issued at the end of the business day.</p>
+        <h3>When do I issue a bill of supply?</h3>
+        <p>Based on the government regulations, it should contain the following:</p>
+        <ul>
+          <li>Name, address and GSTIN of supplier.</li>
+          <li>Bill of supply serial number (generated consecutively, unique for the financial year).</li>
+          <li>Date of issue.</li>
+          <li>If recipient is registered: name, address and GSTIN</li>
+          <li>HSN (for products) or SAC code (for services) *</li>
+          <li>Description of goods/services.</li>
+          <li>Value of goods/services after discount or abatement.</li>
+          <li>Signature of supplier.</li>
+        </ul>
+        <p>This is how a typical bill of supply should look like:</p>
+        <div class="p-1 mb-4">
+          <img class="content-img" src="https://sleekbill.in/images/gst-changes/bill-supply.jpg" alt="">
+        </div>
+        <h3>What should a bill of supply for exports contain?</h3>
+        <br>
+        <p>A bill of supply for exports should also include a declaration regarding payment of GST Depending on the payment of IGST the following text should appear:</p>
+        <p>If IGST has been paid for the exports:</p>
+        <h6>"Supply Meant For Export On Payment Of IGST".</h6>
+        <br>
+        <h6>What details should a bill of supply for exports contain?</h6>
+        <br>
+        <ul>
+          <li>Name and address of the buyer</li>
+          <li>Delivery address</li>
+          <li>Destination country</li>
+          <li>Number and date of application for removal of goods for export.</li>
+
+        </ul>
+      </div>
+      <div class="col-md-4 body-content-left p-0"> 
+        <h4>GST Info</h4>
+        <div class="card p-2" style="width: 20rem;">
+          <img src="https://sleekbill.in/images/credit-note/pic_1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="">GST Inovice Format</a>
+            <p class="card-text">Requirements for invoice templates in GST.</p>
+          </div>
+        </div> 
+        <div class="card p-2" style="width: 20rem;">
+          <img src="https://sleekbill.in/images/credit-note/pic_2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="">GST Billing Benifits</a>
+            <p class="card-text">Advantages & benefits of the new tax system.</p>
+          </div>
+        </div> 
+        <div class="card p-2" style="width: 20rem;">
+          <img src="https://sleekbill.in/images/credit-note/pic_3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="">GST Bill of Supply</a>
+            <p class="card-text">Requirements for composition scheme documents.</p>
+          </div>
+        </div> 
+        <div class="card p-2" style="width: 20rem;">
+          <img src="https://sleekbill.in/images/credit-note/pic_4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="">GST Billing Software</a>
+            <p class="card-text">GST features in online billing software.</p>
+          </div>
+        </div> 
+        <div class="card p-2" style="width: 20rem;">
+          <img src="https://sleekbill.in/images/credit-note/pic_5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="">GST Online Advantages</a>
+            <p class="card-text">Benefits of online over offline invoice software</p>
+          </div>
+        </div>  
+        <h3>Social Profiles</h3>
+        <div class="social-icon">
+          <a href="#"><img src="https://sleekbill.in/images/social/facebook.svg" alt=""></a>
+          <a href="#"><img src="https://sleekbill.in/images/social/linkedin.svg" alt=""></a>
+          <a href="#"><img src="https://sleekbill.in/images/social/twitter.svg" alt=""></a>
+          <a href="#"><img src="https://sleekbill.in/images/social/youtube.png" alt=""></a>
+
+        </div>
+      </div>
+    </div>
+    <section class="d-flex flex-row ">
+      <div class="container">
+        <div class="com-md-6 section-content">
+          <h2>All this comes at a fraction of the cost of some other
+            billing softwares out there.</h2>
+            <p >A modern business that wishes to thrive in the GST era can no longer spend large amounts of time on billing and spreadsheets.
+              Be GST ready and chose a billing software that evolves as per your business's needs.</p>
+              <button class="btn section-btn" style="border-radius: 20px; padding: 30 10px; margin-top: 5%;" type="button">
+                Yes, I want GST Billing Software
+              </button>
+              <p style="font-size: 12px;padding: 2%; margin-left: 4%; ">*Free & Easy - no hidden fees.</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end images-container">
+        <img class="FadeAway" src="https://cmodigital.marketing/site/assets/files/1137/cmo_digital_marketing_web_design.750x0.jpg" alt="">
+      </div>
+    </section>
+    <footer>
+      <div class="container footer-contanier d-flex flex-row">
+        <ul>
+          <li> <a href="">Pricing</a></li>
+          <li> <a href="">About Us</a></li>
+          <li> <a href="">GST Billing Software</a></li>
+          <li> <a href="">GSTR-1 Monthly Return</a></li>
+        </ul>
+        <ul>
+          <li> <a href=""> Security Encryption</a></li>
+          <li> <a href="">Online Billing Advantages</a></li>
+          <li> <a href="">GST Bill of Supply
+          </a></li>
+            <li> <a href="">How to File GSTR-1</a></li>
+        </ul><ul>
+          <li> <a href="">GST Info</a></li>
+          <li> <a href="">GST Invoice Format</a></li>
+          <li> <a href=""> GST Credit Note</a></li>
+          <li> <a href=""> GST Export Invoice</a></li>
+        </ul><ul>
+           <li ><a href="">FAQ</a></li>
+          <li> <a href="">Support</a></li>
+          <li> <a href="">Contact</a></li>
+        
+        </ul>
+        
+      </div>
+      <div class="container d-flex flex-row footer-last align-items-center" style="color: white;">
+        <img src="https://sleekbill.in/images/comodo-badge.png" alt="">
+          
+            <p>Copyright © 2025 SleekBill.in | V K Control System Pvt. Ltd. EULA + Terms & Conditions Privacy Policy
+              Sleek Bill Online is designed to be the best online billing and invoice software for small businesses.</p>
+          
+          <div class="d-flex flex-row">
+            <img src="https://sleekbill.in/images/expert_choice_white_small.png" alt="">
+            <img src="https://sleekbill.in/images/expostional_customer_white_small.png" alt="">
+          </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
